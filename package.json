@@ -1,0 +1,14 @@
+{
+  "name": "react-fuzzysearch",
+  "version": "0.0.1",
+  "dependencies": {
+    "fuzzy": "^0.1.0",
+    "react": "^0.11.1"
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "jsdom": "^0.11.1",
+    "mocha": "^1.21.4",
+    "react-tools": "^0.11.1"
+  }
+}
