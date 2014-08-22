@@ -9,6 +9,10 @@
     "chai": "^1.9.1",
     "jsdom": "^0.11.1",
     "mocha": "^1.21.4",
-    "react-tools": "^0.11.1"
+    "react-tools": "^0.11.1",
+    "sinon": "^1.10.3"
+  },
+  "scripts": {
+    "test": "mocha test"
   }
 }

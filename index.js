@@ -5,19 +5,21 @@ var FuzzySearch = React.createClass({displayName: 'FuzzySearch',
 
   propTypes: {
     list: React.PropTypes.array,
-    onResults: React.PropTypes.func
+    onResults: React.PropTypes.func,
+    fuzzyOptions: React.PropTypes.object
   },
 
   defaultProps: function() {
     return {
       list: [],
-      onResults: function() {}
-    }
+      onResults: function() {},
+      fuzzyOptions: {}
+    };
   },
 
   _onChange: function(e) {
     var node = this.getDOMNode();
-    var results = fuzzy.filter(node.value, this.props.list);
+    var results = fuzzy.filter(node.value, this.props.list, this.props.fuzzyOptions);
     this.props.onResults(results);
   },
 
